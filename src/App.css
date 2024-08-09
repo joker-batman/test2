@@ -1,38 +1,148 @@
-.App {
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
   text-align: center;
+  background: linear-gradient(135deg, #d3c0f5, #ff9a8b); /* Magical gradient background */
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 10px; /* Rounded corners for a softer look */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  color: #6a0dad; /* Magical purple hue */
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.message {
+  margin: 20px;
+  font-size: 1.2rem;
+  color: #4b0528; /* Soft pink color */
+}
+
+button {
+  background-color: #6a0dad; /* Matching magical purple hue */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #5c00a5; /* Darker purple for hover effect */
+}
+
+footer {
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  padding: 10px;
+  margin-top: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+  border-radius: 10px; /* Rounded corners for a softer look */
+}
+
+audio {
+  display: none;
+}
+
+.banner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content horizontally */
+  position: relative;
+  margin-top: 20px;
+}
+
+.left-banners,
+.right-banners {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  width: 150px; /* Reduced width to bring them closer to the center */
+}
+
+.left-banners {
+  left: 280px; /* Reduced space from the left edge */
+}
+
+.right-banners {
+  right: 310px; /* Reduced space from the right edge */
+}
+
+.static-image {
+  width: 180px; /* Adjusted width for a more centered look */
+  height: 200px; /* Adjusted height for a more centered look */
+  object-fit: cover; /* Ensure images fit without distortion */
+  border-radius: 8px;
+  margin: 5px 0; /* Space between stacked images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for better visibility */
+}
+
+.right-banner-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  max-width: 500px; /* Maximum width of the RightBanner */
+  width: 100%; /* Ensure the container takes full width available */
+}
+
+.right-banner-content {
+  width: 100%;
+  max-width: 400px; /* Max width of the content inside RightBanner */
+  height: auto; /* Adjust height automatically */
+  border-radius: 8px;
+  overflow: hidden; /* Hide overflow */
+  padding: 16px; /* Padding for content */
+  background: linear-gradient(to right, #1e2024, #202327); /* Background gradient */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow for better visibility */
+  position: relative; /* Relative positioning for absolute children */
+}
+
+.right-banner-content img {
+  max-width: 100%; /* Ensure the image doesn't overflow the container */
+  width: 150%; /* Full width of the container */
+  height: 300px; /* Fixed height */
+  object-fit: contain; /* Maintain aspect ratio without distortion */
+  border-radius: 8px; /* Match container border radius */
+}
+
+/* Specific button styles */
+.click-me-button {
+  background-color: #6a0dad; /* Matching magical purple hue */
   color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 20px; /* Add space to the right of this button */
 }
 
-.App-link {
-  color: #61dafb;
+.surprise-button {
+  background-color: #6a0dad; /* Matching magical purple hue */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-white {
+  color: white;
 }
