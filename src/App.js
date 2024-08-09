@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import RightBanner from './RightBanner';
@@ -39,9 +40,9 @@ function HomePage({ handleMusicToggle, isMusicPlaying }) {
         <div className="centered-content">
           <section className="message">
             <p>Love and Love Always!</p>
-            <a href="/message">
+            <Link to="/message">
               <button className="click-me-button">Surprise</button>
-            </a>
+            </Link>
           </section>
           <div className="banner-wrapper">
             <div className="left-banners">
